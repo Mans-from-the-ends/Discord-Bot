@@ -2,6 +2,9 @@
 #+Author: Anton Gustavsson
 
 ** Diverse functioner
+Random funktioner av olika slag!
+SKKRT vidare!
+
 #+BEgin_src python
 
 @client.command()
@@ -33,6 +36,14 @@ async def rando(ctx, x: str, y: str):
     xs = [x, y]
     await ctx.send(random.choice(xs))
 #+End_src
+Alla kommandon invokeras mha prefixet "!".
+
+dice: Rulla tärning.
+ping: Existerar endast för att kolla om Black Salami lever...
+zpam: Oumbärlig funktion för att spammera chatten med en sträng text eller mention av server member.
+flip: Coin flip, nutting more, nutting less.
+rando: Skriv tvår stränga, en väljs slumpvis.
+
 ** Matte
 
 
@@ -62,3 +73,9 @@ async def mod(ctx, numOne: int, numTwo: int):
 async def fac(ctx, num: int):
     await ctx.send(math.factorial(num))
 #+end_src
+
+sum: Addition av två tal.
+mult: Multiplikation
+div: Division.
+mod: Modulo.
+fac: Ett tals fakultet. Laborationer av Dr. Prof. Ruben Auf Hendrikschöhn har visat att !fac 807 är taket.
